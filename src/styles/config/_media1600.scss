@@ -1,0 +1,66 @@
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  #root {
+    width: 1600px;
+  }
+
+  .header {
+      padding: 0 98px 0 100px;
+      width: 1600px;
+      height: 124px;
+  }
+
+  .slide {
+      height: 517px;
+  }
+    
+  .slide-title {
+      left: 6.12%;
+      right: 64.12%;
+      top: 12.87%;
+      bottom: 81.1%;
+  }
+    
+  .slide-cards {
+      margin-top: 269px;
+  }
+
+  .wrapper,
+  .content {
+    width: 1230px !important;
+  }
+
+  .prev-btn,
+  .next-btn {
+      width: 50px;
+      height: 50px;
+  }
+
+  .prev-btn {
+      left: -80px;
+  }
+
+  .next-btn {
+      right: -80px;
+  }
+
+  .auto-btn {
+      top: 1%;
+      right: -4%;
+      font-size: 1.5vmin;
+  }
+
+  .auto-checkbox {
+      width: 2vmin;
+      height: 2vmin;
+  }
+
+  .slider-dots {
+      bottom: 46px;
+  }
+
+  .dot {
+      margin-right: 16px;
+      width: 14px;
+      height: 14px;
+  }
+}

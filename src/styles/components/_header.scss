@@ -1,0 +1,85 @@
+.header {
+    @include flexible(row, space-between, center);
+    padding: 0 258px 0 260px;
+    width: 1920px;
+    height: 124px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(12, 47, 136, 0.15);
+}
+
+.header-bmbtn {
+    @include noBorderCursor;
+    display: none;
+    width: 45px;
+    height: 36px;
+    background: url('../../img/burger-menu.svg') no-repeat center;
+}
+
+.bmenu-logo,
+.bmenu-close {
+    display: none;
+}
+
+.header img {
+    width: 106px;
+    height: 50px;
+}
+
+.header-nav {
+    @include flexible(row, space-between, center);
+    width: 596px;
+}
+
+.header-nav a {
+    font-family: $notoFont;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.015em;
+    color: #3F4449;
+    text-decoration: none;
+}
+
+.header-search {
+    @include flexible(row, center, center);
+    width: 431px;
+    height: 48px;
+    border: 1px solid #3F4449;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.header-search input,
+.header-search button {
+    border: none;
+}
+
+.header-search input {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    padding: 0 1vmin;
+    outline: none;
+}
+
+.header-search button {
+    width: 46px;
+    height: 100%;
+    background: #3F97FB url('../../img/search-icon.svg') no-repeat center;
+    background-size: 24px;
+    border-radius: 0px 1px 1px 0px;
+    cursor: pointer;
+}
+
+.header-login_btn {
+    @include noBorderCursor;
+    width: 93px;
+    background: #FFFFFF;
+    text-align: right;
+    font-family: $notoFont;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3F4449;
+    background: url('../../img/user-icon.svg') no-repeat left;
+    background-size: 24px;
+}

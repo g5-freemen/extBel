@@ -1,0 +1,88 @@
+.projects {
+  @include flexible(column, auto, center);
+  height: 800px;
+  background: #F3FAFF;
+}
+
+.projects-title {
+  margin: 69px 0 52px 0;
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 24px;
+  text-align: left;
+  color: #0158BA;
+}
+
+.project-card {
+  @include flexible(column, auto, auto);
+  width: 605px;
+  height: 548px;
+  background: #FFFFFF;
+  filter: drop-shadow(0px 10px 20px rgba(12, 47, 136, 0.25));
+  box-sizing: border-box;
+}
+
+.project-card .project-img {
+  width: 100%;
+  height: 370px;
+}
+
+.project-card .info {
+  @include flexible(column, space-between, flex-start);
+  padding: 19px 34px 28px 33px;
+  box-sizing: border-box;
+}
+
+.project-card .card-title {
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: none;
+}
+
+.project-card .card-content,
+.project-card .card-link {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.wrapper,
+.content {
+  width: 1240px !important;
+}
+
+.prev-btn,
+.next-btn {
+    width: 50px;
+    height: 50px;
+}
+
+.prev-btn {
+    left: -80px;
+}
+
+.next-btn {
+    right: -80px;
+}
+
+.auto-btn {
+    top: 1%;
+    right: -4%;
+    font-size: 1.5vmin;
+}
+
+.auto-checkbox {
+    width: 2vmin;
+    height: 2vmin;
+}
+
+.slider-dots {
+    bottom: 46px;
+}
+
+.dot {
+    margin-right: 16px;
+    width: 14px;
+    height: 14px;
+}

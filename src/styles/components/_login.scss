@@ -1,0 +1,116 @@
+.login {
+  @include flexible(column, center, center);  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 99;
+}
+
+.login-form {
+  @include flexible(column, space-between, center);
+  padding: 50px 59px 55px;
+  width: 480px;
+  height: 542px;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.form-close {
+  @include flexible(row, center, center);
+  @include noBorderCursor;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 25px;
+  background: #fff;
+  color: #3F4449;
+}
+
+.form-title {
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #3F4449;
+}
+
+.form-name,
+.form-password {
+  @include flexible(column, center, flex-start);
+  width: 100%;
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3F4449;
+}
+
+.form-name input,
+.form-password input {
+  padding: 0 1vmin;
+  width: 100%;
+  height: 2.5em;
+  background: rgba(189, 220, 254, 0.05);
+  border: 1px solid #BDDCFE;
+  box-sizing: border-box;
+  border-radius: 2px;
+  outline: none;
+}
+
+.form-password a {
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #3F97FB;
+}
+
+.form-name__invalid,
+.form-password__invalid {
+  font-size: .8em;
+  color: #FF0000;
+}
+
+.form-btns {
+  @include flexible(column, space-between, center);
+  height: 111px;
+}
+
+.form-btns input {
+  @include noBorderCursor;
+}
+
+.form-btns input:first-child {
+  width: 360px;
+  height: 60px;
+  background: #3F97FB;
+  border-radius: 100px;
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.form-btns input:last-child {
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  background: #FFFFFF;
+  color: #3F97FB;
+}

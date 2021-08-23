@@ -1,0 +1,52 @@
+.footer {
+  @include flexible(column, center, center);
+  position: static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 183px;
+  background: #FFFFFF;
+  z-index: 9;
+}
+
+.footer-nav {
+  margin-bottom: 34px;
+  width: 604px;
+  height: 27px;
+  @include flexible(row, space-between, center);
+}
+
+.footer-nav a {
+  font-family: $notoFont;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.015em;
+  color: #3F4449;
+  text-decoration: none;
+}
+
+.footer-icons {
+  width: 145.4px;
+  height: 28px;
+  @include flexible(row, space-between, center);
+}
+
+.footer-icons a {
+  width: 24px;
+  height: 24px;
+}
+
+a.whatsapp-link {
+  background: url('../../img/icon-WhatsApp.svg') no-repeat center;
+  background-size: contain;
+}
+
+a.slack-link {
+  background: url('../../img/icon-Slack.svg') no-repeat center;
+  background-size: contain;
+}
+
+a.instagram-link {
+  background: url('../../img/icon-Instagram.svg') no-repeat center;
+  background-size: contain;
+}

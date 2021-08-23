@@ -1,0 +1,12 @@
+@mixin noBorderCursor {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin flexible($direct, $jCont, $aItems) {
+    display: flex;
+    flex-direction: $direct;
+    justify-content: $jCont;
+    align-items: $aItems;
+}

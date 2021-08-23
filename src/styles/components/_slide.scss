@@ -1,0 +1,77 @@
+.slide {
+  @include flexible(column, center, center);
+  height: 620px;
+  position: relative;
+  background: url('../../img/Cover.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.slide-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slide-title {
+  position: absolute;
+  left: 13.44%;
+  right: 59.06%;
+  top: 7.18%;
+  bottom: 72.83%;
+
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+
+  color: #FFFFFF;
+}
+
+.slide-cards {
+  @include flexible(row, space-between, auto);
+  margin-top: 345px;
+  width: 1110px;
+  height: 198px;
+}
+
+.slide-card {
+  width: 350px;
+  background: #FFFFFF;
+  filter: drop-shadow(0px 10px 20px rgba(12, 47, 136, 0.25));
+  box-sizing: border-box;
+}
+
+.slide-card .info {
+  @include flexible(column, space-between, auto);
+  padding: 28px 34px;
+}
+
+.card-title {
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0158BA;
+}
+
+.card-content,
+.card-link {
+  font-family: $notoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F4449;
+}
+
+.card-link {
+  color: #3F97FB;
+  text-decoration: none;
+}
