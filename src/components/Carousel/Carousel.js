@@ -12,12 +12,13 @@ export default function Carousel({children}) {
     let { height, slidesToShow, showDots, spaceBetweenSlides, showAuto, autoInterval } = settings;
 
     function setCarousel() {
+        slidesToShow = document.querySelector('.App').clientWidth > 720 ? 2 : 1;
+
         const carousel = document.querySelector('.carousel');
         const width = carousel.clientWidth;
         const content = document.querySelector('.content');
         const slides = document.querySelectorAll('.item');
         const slideWidth =  (width - spaceBetweenSlides * (slidesToShow - 1)) / slidesToShow + 'px';
-        slidesToShow = document.documentElement.clientWidth > 720 ? 2 : 1;
 
         slides.forEach(el => el.style.width = slideWidth);
 
@@ -51,7 +52,7 @@ export default function Carousel({children}) {
 
     useEffect(() => {
         setCarousel();
-        window.addEventListener('resize', () => window.location.reload())
+        window.addEventListener('resize', () => setCarousel())
     }, []);
 
     useEffect(() => {
